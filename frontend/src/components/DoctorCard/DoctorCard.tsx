@@ -153,11 +153,11 @@ const DoctorCard: React.FC = () => {
 
   return (
     <>
-      <SearchBar
-        value={searchValue}
+      {/* <SearchBar */}
+        {/* value={searchValue}
         onChange={handleInputChange}
-        onSearch={() => debouncedHandleSearch(searchValue)}
-      />
+        onSearch={() => debouncedHandleSearch(searchValue)} */}
+      {/* /> */}
       <div className="mt-10 mx-6"> {/* Use smaller margin for mobile */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> {/* Responsive grid */}
           {searchResults.length > 0 ? (
