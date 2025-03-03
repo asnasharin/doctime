@@ -61,15 +61,8 @@ const expressConfig = (app: Express) => {
     }
   });
 
-  app.use("/", routes(dependencies));
-  // Configure AWS S3
-  // const s3 = new AWS.S3({
-  //   accessKeyId: process.env.YOUR_ACCESS_KEY_ID,
-  //   secretAccessKey: process.env.YOUR_SECRET_ACCESS_KEY,
-  //   region: process.env.YOUR_REGION,
-  // });
-
-  // return s3;
+  app.use("/", routes(dependencies))
+ 
 
 
 };
